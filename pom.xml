@@ -16,18 +16,23 @@
 
 	<modules>
 		<module>licensing</module>
+		<module>organisation</module>
+		<module>contract</module>
+		<module>assets</module>
 	</modules>
 
 	<description>Microservice Training 01: Spring Boot</description>
 
 	<properties>
 		<java.version>17</java.version>
+		<maven.compiler.source>17</maven.compiler.source>
+		<maven.compiler.target>17</maven.compiler.target>
 	</properties>
 
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
-			<artifactId>spring-boot-starter</artifactId>
+			<artifactId>spring-boot-starter-web</artifactId>
 		</dependency>
 
 		<dependency>
