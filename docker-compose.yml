@@ -2,7 +2,7 @@ version: '3'
 
 services:
   licensingservice:
-    image: jamesvrooney/licensing-service:0.0.1-SNAPSHOT
+    image: jamesvrooney/licensing:0.0.1-SNAPSHOT
     ports:
       - "8080:8080"
     environment:
