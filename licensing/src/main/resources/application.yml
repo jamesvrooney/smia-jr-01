@@ -1,1 +1,24 @@
+server:
+  port: 8081
+
+spring:
+  application:
+    name: licensing
+  profiles:
+    active: dev
+  config:
+    import: configserver:http://localhost:8082/
+
+#  datasource:
+#    password: password
+#    url: jdbc:postgresql://localhost:5432/licensing
+#    username: jamesvrooney
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+    show-sql: true
 

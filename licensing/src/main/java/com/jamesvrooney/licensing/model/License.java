@@ -1,11 +1,26 @@
 package com.jamesvrooney.licensing.model;
 
 import lombok.Data;
+import lombok.Getter;
+import lombok.Setter;
+import lombok.ToString;
 import org.springframework.hateoas.RepresentationModel;
 
-@Data
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.Id;
+
+//@Data
+@Getter
+@Setter
+@ToString
+@Entity
 public class License extends RepresentationModel<License> {
-    private int id;
+
+    @Id
+    @GeneratedValue
+    private Long id;
+
     private String licenseId;
     private String description;
     private String organizationId;
