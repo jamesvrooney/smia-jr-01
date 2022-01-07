@@ -3,10 +3,10 @@ package com.jamesvrooney.licensing;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-@SpringBootTest
+//@SpringBootTest
 class LicensingServiceApplicationTests {
 
-	@Test
+//	@Test
 	void contextLoads() {
 	}
 

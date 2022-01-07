@@ -7,7 +7,8 @@ spring:
   profiles:
     active: dev
   config:
-    import: configserver:http://localhost:8082/
+    import: configserver:http://configserver:8082/
+#    import: configserver:http://localhost:8082/
 
 #  datasource:
 #    password: password
